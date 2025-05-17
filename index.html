@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator | Aarogya Parajuli</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="uppperContainer">
+            <div class="top-section">
+                <span id="title">> Generate a secure password 🔒</span>
+            </div>
+            <div class="inputSection">
+                <input type="text" name="password" id="password" readonly>
+                <span id="copy"><img src="/icons/copy-line-icon.svg" alt="Copy to clipboard" width="30px" height="30px"
+                        style="filter: invert(100%);" id="copyPass"></span>
+            </div>
+        </div>
+        <div class="lowerContainer">
+            <p id="title">Customize your password</p>
+            <div class="customization">
+                <div class="checkboxes">
+                    <span><input type="checkbox" id="UpperCase"> <label for="UpperCase">UpperCase</label></span>
+                    <span><input type="checkbox" id="LowerCase"> <label for="LowerCase">LowerCase</label></span>
+                    <span><input type="checkbox" id="Numeric"> <label for="Numeric">Numeric</label></span>
+                    <span><input type="checkbox" id="Symbols" required checked> <label for="Symbols">Symbols
+                            (<sup>*</sup>Mandatory)</label></span>
+                </div>
+                <div class="slider-right">
+                    <span>
+                        <label for="passwordLength">Password Length: </label>
+                        <input type="text" name="passwordLength" id="passwordLength" readonly value="12">
+                    </span>
+                    <input type="range" name="length" id="length" min="8" max="20" value="12" style="width: 70%;">
+                </div>
+            </div>
+            <button type="submit" id="submit">Generate</button>
+        </div>
+
+
+
+    </div>
+    <!-- <div class="author">
+            <p id="footer">Brain fueled by ☕-- <a href="https://github.com/CodexAarogya" target="_blank">Aarogya Parajuli</a></p>
+        </div> -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Code Pro", monospace;
+}
+
+*::selection {
+    background-color: rgb(38, 168, 38);
+}
+
+body {
+    color: #ffffff;
+    width: auto;
+    height: 100vh;
+    background-color: #aeaeae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    padding: 30px;
+    width: 50vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 5vh;
+    background-color: #0b131e;
+    border-radius: 12px;
+    box-sizing: content-box;
+}
+
+.uppperContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    width: inherit;
+    height: 20%;
+    border-bottom: 2px solid #ffffff75;
+    box-sizing: border-box;
+}
+
+.inputSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vh;
+    align-items: center;
+    gap: 1vw;
+}
+
+#copyPass:hover {
+    cursor: pointer;
+}
+
+#password {
+    width: 70%;
+    height: 3vh;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #000000bd;
+}
+
+.lowerContainer {
+    min-height: fit-content;
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+    align-items: center;
+    top: 0;
+    gap: 10vh;
+}
+
+.customization {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: inherit;
+    min-height: fit-content;
+}
+
+.checkboxes {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: fit-content;
+}
+
+.slider-right {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 2vh;
+    justify-content: center;
+}
+
+button {
+    width: 20vw;
+    height: 7vh;
+    color: #000000;
+    margin-top: 18px;
+    border-radius: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    transition: ease-in-out 300ms;
+}
+
+button:hover {
+    background-color: #0b131e;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    transition-duration: 300ms;
+    letter-spacing: 3px;
+}
+
+#passwordLength {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 70px;
+    height: 5vh;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.checkboxes>span {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 1vh;
+    gap: 1vw;
+}
+
+input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    accent-color: rgb(168, 38, 38);
+}
+
+input[type="range"] {
+    width: 15vw;
+    accent-color: rgb(38, 168, 38);
+}
+
+input {
+    color: #212121;
+    padding: 10px;
+}
+
+#title {
+    font-size: 30px;
+}
+
+label,
+#footer,
+a {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+a {
+    color: rgb(38, 168, 38);
+    text-decoration: none;
+}
+
+.author {
+    bottom: 3vh;
+    position: absolute;
+}
+
+@media only screen and (max-width: 1126px) {
+    #title {
+        font-size: 25px;
+    }
+
+    label,
+    #footer,
+    a {
+        font-size: 17px;
+    }
+
+    input[type="checkbox"] {
+        width: 24px;
+        height: 24px;
+    }
+
+    #passwordLength {
+        width: 70px;
+        height: 3vh;
+        font-size: 25px;
+    }
+
+    button {
+        font-size: 15px;
+    }
+
+    #password {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .customization {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 10px;
+    }
+
+    #title {
+        font-size: 17px;
+    }
+
+    label,
+    #footer,
+    a {
+        font-size: 13px;
+    }
+
+    button {
+        font-size: 13px;
+    }
+
+    #passwordLength {
+        width: 70px;
+        height: 2vh;
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        padding: 0px;
+    }
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        padding: 2px;
+        border-radius: 0px;
+    }
+
+    #title {
+        font-size: 15px;
+    }
+
+    label,
+    #footer,
+    a {
+
+        font-weight: 600;
+    }
+
+    button {
+        font-size: 12px;
+        font-weight: 700;
+        width: 40vw;
+
+    }
+
+    #passwordLength {
+        width: 55px;
+        height: 2vh;
+        font-size: 20px;
+    }
+
+    input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+    }
+
+    .lowerContainer {
+        gap: 6vh;
+    }
+
+}
